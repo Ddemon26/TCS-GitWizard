@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6755848809520808676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7914a4a86a43ec9e156f3230709579, type: 3}
+  m_Name: gitInfo_3
+  m_EditorClassIdentifier: 
+  m_ownerName: Others
+  m_packageInfos:
+  - m_repoName: Eflatun SceneReference v4.1.1
+    m_url: https://github.com/starikcetin/Eflatun.SceneReference.git#4.1.1
+  - m_repoName: Steamworks.NET
+    m_url: https://github.com/rlabrecque/Steamworks.NET.git?path=/com.rlabrecque.steamworks.net
+--- !u!114 &-2692995617253340421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7914a4a86a43ec9e156f3230709579, type: 3}
+  m_Name: gitInfo_1
+  m_EditorClassIdentifier: 
+  m_ownerName: Git Amend
+  m_packageInfos:
+  - m_repoName: Unity-Utils
+    m_url: https://github.com/adammyhre/Unity-Utils.git
+  - m_repoName: Unity-Improved-Timers
+    m_url: https://github.com/adammyhre/Unity-Improved-Timers.git
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa44b7a0aea4d729318cac9de228cfd, type: 3}
+  m_Name: PackageWizardConfig
+  m_EditorClassIdentifier: 
+  m_owners:
+  - {fileID: -2692995617253340421}
+  - {fileID: 6639761051506764844}
+  - {fileID: -6755848809520808676}
+  - {fileID: 2580860010598159388}
+--- !u!114 &2580860010598159388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7914a4a86a43ec9e156f3230709579, type: 3}
+  m_Name: gitInfo_4
+  m_EditorClassIdentifier: 
+  m_ownerName: Tent City Studio
+  m_packageInfos:
+  - m_repoName: String Library
+    m_url: https://github.com/Ddemon26/TCS-String-Library.git
+  - m_repoName: Scriptable Object Architecture
+    m_url: https://github.com/Ddemon26/TCS-ScriptableObjectArchitecture.git
+  - m_repoName: UIToolKit Utils
+    m_url: https://github.com/Ddemon26/TCS-UIToolKit-Utils.git
+  - m_repoName: Game Logger
+    m_url: https://github.com/Ddemon26/TCS-GameLogger.git
+  - m_repoName: Event Bus
+    m_url: https://github.com/Ddemon26/TCS-Event-Bus.git
+  - m_repoName: Simple Scripts
+    m_url: https://github.com/Ddemon26/TCS-Simple-Scripts.git
+  - m_repoName: Input Manager
+    m_url: https://github.com/Ddemon26/TCS-Input-Manager.git
+--- !u!114 &6639761051506764844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7914a4a86a43ec9e156f3230709579, type: 3}
+  m_Name: gitInfo_2
+  m_EditorClassIdentifier: 
+  m_ownerName: .NET
+  m_packageInfos:
+  - m_repoName: NuGetForUnity
+    m_url: https://github.com/GlitchEnzo/NuGetForUnity.git?path=/src/NuGetForUnity
+  - m_repoName: UniTask
+    m_url: https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask

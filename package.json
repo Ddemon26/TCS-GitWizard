@@ -1,0 +1,14 @@
+{
+  "name": "com.tcs.achievements",
+  "displayName": "TCS-Achievements",
+  "description": "A simple achievement system for Unity",
+  "version": "1.0.1",
+  "keywords": ["TCS", "Achievements", "Unity"],
+  "category": "Tent City Studio",
+  "dependencies": {},
+  "author": {
+    "name": "Damon Fedorick",
+    "url": "https://github.com/Ddemon26/TCS-Achievements"
+  },
+  "documentationUrl": "https://github.com/Ddemon26/TCS-Achievements/blob/main/README.md"
+}
