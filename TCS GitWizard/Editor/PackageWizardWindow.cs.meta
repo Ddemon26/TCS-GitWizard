@@ -6,9 +6,9 @@ MonoImporter:
   defaultReferences:
   - m_ViewDataDictionary: {instanceID: 0}
   - m_visualTreeAsset: {fileID: 9197481963319205126, guid: 04d2038ccd4f0e1458a683ee4ccddccc, type: 3}
-  - m_elementContainer: {fileID: 9197481963319205126, guid: acddfa3845d3ddc45bb8384f65867c13, type: 3}
   - m_ownerContainer: {fileID: 9197481963319205126, guid: 1d1c0178da7c5944f84320e20f8c6880, type: 3}
-  - m_gitPackageInfos: {fileID: 11400000, guid: 4b1329be1b6c6ff41a645cae46812246, type: 2}
+  - m_elementContainer: {fileID: 9197481963319205126, guid: acddfa3845d3ddc45bb8384f65867c13, type: 3}
+  - m_gitGitInfos: {fileID: 11400000, guid: 4b1329be1b6c6ff41a645cae46812246, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -18,6 +18,8 @@ MonoBehaviour:
     m_url: https://github.com/starikcetin/Eflatun.SceneReference.git#4.1.1
   - m_repoName: Steamworks.NET
     m_url: https://github.com/rlabrecque/Steamworks.NET.git?path=/com.rlabrecque.steamworks.net
+  - m_repoName: Zenject
+    m_url: https://github.com/modesttree/Zenject
 --- !u!114 &-2692995617253340421
 MonoBehaviour:
   m_ObjectHideFlags: 0

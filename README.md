@@ -43,21 +43,14 @@ The tool leverages editor scripts to create an intuitive user interface that ena
 
 - **Opening GitWizard**: Navigate to `Tools > TCS GitWizard` in the Unity Editor to open the main window.
 
- <img src="" width="400" height="325">
-
 - **Adding a Package**: Use the `Add Package` button to add a new Git-based package by providing the repository URL. This will allow you to centralize package management directly in Unity.
-
-  ![Adding a Package](path/to/adding_package.png)
 
 - **Updating Packages**: View and update packages directly through the interface, ensuring that all dependencies are up-to-date.
 
-  ![Updating Packages](path/to/updating_packages.png)
-
 ## Configuration
 
-- **PackageWizardConfig.asset**: This asset is used to store configuration data for the GitWizard. You can customize settings such as default Git branches, authentication methods, and other package-specific configurations.
+- **PackageWizardConfig.asset**: This asset is used to store configuration data for the GitWizard. You can customize settings such as default Git branches.
 
-  ![Configuration Settings](path/to/configuration_settings.png)
 
 ## Contribution
 
