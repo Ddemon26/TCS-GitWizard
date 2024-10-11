@@ -8,8 +8,7 @@ namespace TCS.GitWizard.Editor {
         [SerializeField] VisualTreeAsset m_visualTreeAsset;
         [SerializeField] VisualTreeAsset m_ownerContainer;
         [SerializeField] VisualTreeAsset m_elementContainer;
-        [FormerlySerializedAs("m_gitPackageInfos")]
-        [SerializeField] GitWizardConfig m_gitGitInfos;
+        [SerializeField] GitWizardConfig m_gitConfig;
         
         List<PackageOwner> m_owners;
         VisualElement m_scrollView;
@@ -25,7 +24,7 @@ namespace TCS.GitWizard.Editor {
             m_owners = new List<PackageOwner>();
             
             //populate the owners list
-            foreach (var owner in m_gitGitInfos.m_owners) {
+            foreach (var owner in m_gitConfig.m_owners) {
                 m_owners.Add(new PackageOwner(owner.m_ownerName, owner.m_packageInfos));
             }
         }
