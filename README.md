@@ -1,84 +1,88 @@
-# TCS PackageWizard
+# TCS GitWizard
 
 ![Status - Pre-Release](https://img.shields.io/badge/Status-Pre--Release-FFFF00)
-![GitHub issues](https://img.shields.io/github/issues/Ddemon26/TCS-PackageWizard)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/Ddemon26/TCS-PackageWizard)
-![License](https://img.shields.io/github/license/Ddemon26/TCS-PackageWizard)
-![Unity Version](https://img.shields.io/badge/Unity-6%2B-blue)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/Ddemon26/TCS-GitWizard)
+![GitHub](https://img.shields.io/github/license/Ddemon26/TCS-GitWizard)
+![GitHub issues](https://img.shields.io/github/issues/Ddemon26/TCS-GitWizard)
+![GitHub last commit](https://img.shields.io/github/last-commit/Ddemon26/TCS-GitWizard)
+[![Personal Discord](https://img.shields.io/discord/knwtcq3N2a?label=Personal%20Discord&logo=discord)](https://discord.gg/knwtcq3N2a)
+[![Game Dev Discord](https://img.shields.io/discord/3NMF6PwuT2?label=Game%20Dev%20Discord&logo=discord)](https://discord.gg/3NMF6PwuT2)
 
 ## Overview
 
-**TCS PackageWizard** is an advanced Unity development tool meticulously crafted to facilitate the creation, management, and organization of Unity packages. By leveraging the power of Unity's UI Toolkit, this tool provides an intuitive and sophisticated interface, enabling developers to efficiently create custom packages, integrate seamlessly with Git repositories, and optimize the overall package development workflow. The design philosophy emphasizes both usability and modularity, rendering it equally suitable for both novice developers and experts aiming for reusable, maintainable code.
+**TCS GitWizard** is a Unity editor-only plugin designed to simplify the process of managing Unity packages hosted on Git repositories. It provides a suite of editor tools that allows Unity developers to configure, install, update, and manage third-party or internal packages seamlessly. By integrating directly into the Unity Editor, TCS GitWizard aims to reduce the complexity of dealing with Git packages, making it easier to handle dependencies and improve development workflow.
 
-## Key Features
+The main goal of TCS GitWizard is to serve as a central hub for managing all your Git-based Unity packages, similar to how the Unity Package Manager handles store and core engine assets. This system allows you to store Git repository URLs in a central configuration, and lets these links do all the work for installing, updating, and managing packages in one convenient place.
 
-- **Package Creation Wizard**: Offers a systematic, step-by-step approach to create Unity packages, ensuring adherence to best practices and accurate configuration.
-- **Git Integration**: Provides seamless support for integrating Unity packages with Git repositories, allowing for easy cloning and management of packages from remote sources, thereby promoting collaborative development.
-- **Intuitive User Interface**: Developed with Unity's UI Toolkit, the user interface is engineered to be modern, responsive, and easily navigable, contributing to an efficient package management experience.
-- **Template Utilization**: Offers predefined templates to help developers maintain consistency, standardization, and best practices throughout the package development process.
-- **Assembly Definition Management**: Automates the configuration of assembly definitions, thereby optimizing compilation times and ensuring that the package's internal structure remains organized and performant.
+The tool leverages editor scripts to create an intuitive user interface that enables developers to manage packages without needing to leave Unity. It is an ideal solution for teams that rely on Git-based packages for their projects, providing automation and ease of use.
 
-## Core Components
+## Features
 
-- **GitPackages.cs**: Handles Git-based operations related to Unity packages, including cloning repositories and linking to remote Git sources.
-- **PackageSingleTemplate.cs**: Serves as the blueprint for structuring new Unity packages, ensuring a consistent starting point that adheres to predefined standards.
-- **PackageWizardWindow.cs**: Implements the core editor window for the package wizard, providing an interactive graphical interface to simplify package creation and management.
-- **TCSPackageWizard.cs**: Contains the core logic and operational functions that underpin the package wizard's functionality, acting as the central controller for package-related actions.
-- **UIToolKit**: Encompasses the UI definitions for the wizard, including XML layout files (`.uxml`) and stylesheets (`.uss`), providing a foundation for the user interface's structure and aesthetic.
+- **Centralized Package Management**: Store all your Git package URLs in one place and manage them easily.
+- **Package Management**: Easily add, update, and remove Unity packages hosted on Git repositories.
+- **Custom Editor Windows**: User-friendly windows for configuring and managing packages, fully integrated into the Unity Editor.
+- **Configuration Tools**: Maintain and edit package configuration settings to ensure compatibility across projects.
+- **UI Toolkit Integration**: Uses Unity's UIToolkit for a consistent and customizable user experience.
 
-## Installation Guide
+## Getting Started
 
-1. **Clone the Repository**:
+### Prerequisites
+
+- **Unity Version**: TCS GitWizard has been tested with Unity 2021.3 or higher.
+- **Git**: Ensure that Git is installed and accessible from your system's PATH, as it is required for cloning and updating packages.
+
+### Installation
+
+1. **Clone the Repository**: Clone this repository to your Unity project under the `Assets/Plugins` folder.
+   ```bash
+   git clone https://github.com/Ddemon26/TCS-GitWizard.git Assets/Plugins/TCS-GitWizard
    ```
-   git clone https://github.com/Ddemon26/TCS-PackageWizard.git
-   ```
-2. **Import into Unity**:
-   - Open your Unity project.
-   - Import the `TCS PackageWizard` directory into the `Assets/Editor` folder of your project.
+2. **Open Unity**: Once the repository is added, open Unity, and the GitWizard tools should be available under the `Tools` menu.
 
-## Usage Instructions
+### Usage
 
-1. **Opening the Package Wizard**:
-   - In Unity, navigate to `Tools > TCS PackageWizard` to launch the main wizard interface.
-2. **Creating a New Package**:
-   - Select the `Create New Package` option.
-   - Enter the necessary information, such as the package name, namespace, and destination directory.
-   - Use the provided templates to maintain consistency and ensure adherence to project standards.
-3. **Managing Git Packages**:
-   - Use the `GitPackages` functionality to clone or establish links to remote Git repositories, facilitating external package integration.
-4. **Customizing Package Contents**:
-   - Modify the default UI configurations in the `UIToolKit` to adapt them to the specific requirements of your project.
+- **Opening GitWizard**: Navigate to `Tools > TCS GitWizard` in the Unity Editor to open the main window.
 
-## System Requirements
+ <img src="" width="400" height="325">
 
-- **Unity Version**: 6 or higher
-- **Dependencies**: Unity UI Toolkit (integrated from Unity 6 or higher)
+- **Adding a Package**: Use the `Add Package` button to add a new Git-based package by providing the repository URL. This will allow you to centralize package management directly in Unity.
 
-## Contributing to the Project
+  ![Adding a Package](path/to/adding_package.png)
 
-We highly encourage and appreciate contributions. If you have ideas for enhancements or new features, please open an issue or submit a pull request for review.
+- **Updating Packages**: View and update packages directly through the interface, ensuring that all dependencies are up-to-date.
+
+  ![Updating Packages](path/to/updating_packages.png)
+
+## Configuration
+
+- **PackageWizardConfig.asset**: This asset is used to store configuration data for the GitWizard. You can customize settings such as default Git branches, authentication methods, and other package-specific configurations.
+
+  ![Configuration Settings](path/to/configuration_settings.png)
+
+## Contribution
+
+Contributions are welcome! If you'd like to contribute to the development of TCS GitWizard:
 
 1. Fork the repository.
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`).
-3. Commit your modifications (`git commit -m 'Add some AmazingFeature'`).
-4. Push to the feature branch (`git push origin feature/AmazingFeature`).
-5. Open a pull request for evaluation and integration.
+2. Create a feature branch.
+3. Commit your changes.
+4. Open a pull request.
 
-## License Information
+Please make sure to follow the coding standards and include relevant documentation/comments for any new features.
 
-This project is distributed under the MIT License. For more information, refer to the [LICENSE](LICENSE) file.
+## License
 
-## Contact Information
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-- **Author**: Ddemon26
-- **GitHub**: [https://github.com/Ddemon26](https://github.com/Ddemon26)
-- **Issues**: [GitHub Issues](https://github.com/Ddemon26/TCS-PackageWizard/issues)
+## Acknowledgements
 
-## Acknowledgments
+- **Unity UIToolkit**: For providing the UI framework used to build the editor windows.
+- **Git for Unity**: Inspiration for managing Git-based packages directly from the Unity interface.
 
-- **Unity Documentation**: We extend our gratitude to the Unity community for their comprehensive documentation and valuable resources.
-- **Contributors**: Special thanks to all contributors whose efforts have significantly improved this project.
+## Support
+
+If you encounter any issues or have questions, please open an issue on the [GitHub Issues](https://github.com/Ddemon26/TCS-GitWizard/issues) page.
 
 ---
 
-Explore, contribute, and utilize TCS PackageWizard to enhance the modularity and efficiency of your Unity development workflow. We hope this tool empowers your development process and enhances your productivity. Happy coding!
+Feel free to customize TCS GitWizard to suit your needs. We hope this tool helps streamline your Unity package management workflow!
