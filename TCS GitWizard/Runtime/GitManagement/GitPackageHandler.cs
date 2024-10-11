@@ -63,7 +63,7 @@ namespace TCS.GitWizard {
             StartNextPackageInstallation();
         }
         
-        // Method to open a URL link without the git+ prefix
+        // Method to open a URL link
         public static void OpenPackageUrl(string packageUrl) {
             if (string.IsNullOrEmpty(packageUrl)) {
                 Debug.LogError("Package URL is null or empty.");
@@ -73,6 +73,7 @@ namespace TCS.GitWizard {
             // Open the URL
             Application.OpenURL(packageUrl);
         }
+        
         //method to uninstall a package
         public static void UninstallPackage(string package) {
             Client.Remove(package);
