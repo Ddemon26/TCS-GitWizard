@@ -1,0 +1,9 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/TCS-PackageSystems/TCS-GitWizard/TCS%20GitWizard/Runtime/UIToolKit/USS/PackageWizardWindow.uss?fileID=7433441132597879392&amp;guid=6ae94729db7bab743afb159b0689faf2&amp;type=3#PackageWizardWindow" />
+    <engine:VisualElement name="owner-container">
+        <engine:VisualElement name="title-container" style="flex-grow: 1;">
+            <engine:Label text="Git Amend" name="owner-name" class="header" />
+        </engine:VisualElement>
+        <engine:VisualElement name="button-container" style="flex-grow: 1;" />
+    </engine:VisualElement>
+</engine:UXML>
