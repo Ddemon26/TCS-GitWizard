@@ -44,15 +44,13 @@ The plugin utilizes editor scripts to provide an intuitive user interface, allow
 
 - **Opening GitWizard**: Navigate to `Tools > TCS GitWizard` within the Unity Editor to access the main tool window.
 
-  ![Opening GitWizard](path/to/opening_gitwizard.png)
-
 - **Adding a Package**: Click the `Add Package` button to add a new Git-based package by specifying the repository URL. This feature enables efficient centralized package management within Unity.
 
-  ![Adding a Package](path/to/adding_package.png)
+     <img src="https://cdn.discordapp.com/attachments/1294049442248523877/1294541686323810367/image.png?ex=670b6365&is=670a11e5&hm=ac52f8267d3cc5fc1f475f4f0a3f5fabc7b05a65cba8ae868bca0b105e656c8e&" width="400" height="325">
 
 - **Updating Packages**: Use the interface to view and update packages, ensuring all dependencies are maintained at their latest versions.
 
-  ![Updating Packages](path/to/updating_packages.png)
+     <img src="https://cdn.discordapp.com/attachments/1294216396770906154/1294555490113687615/image.png?ex=670b7040&is=670a1ec0&hm=c3108c065a4f0ba70d5c387378db6469d551340892aeec0bb78101a0d366068f&" width="400" height="325">
 
 ---
 
