@@ -1,6 +1,5 @@
 <engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <engine:Template name="owner-container" src="project://database/Assets/owner-container.uxml?fileID=9197481963319205126&amp;guid=1d1c0178da7c5944f84320e20f8c6880&amp;type=3#owner-container" />
-    <Style src="project://database/Assets/NewStuff/TCS-PackageWizard/TCS%20PackageWizard/Editor/UIToolKit/PackageWizardWindow.uss?fileID=7433441132597879392&amp;guid=6ae94729db7bab743afb159b0689faf2&amp;type=3#PackageWizardWindow" />
+    <Style src="project://database/Assets/TCS-PackageSystems/TCS-GitWizard/TCS%20GitWizard/Runtime/UIToolKit/USS/PackageWizardWindow.uss?fileID=7433441132597879392&amp;guid=6ae94729db7bab743afb159b0689faf2&amp;type=3#PackageWizardWindow" />
     <engine:VisualElement name="root" style="flex-grow: 1;">
         <engine:VisualElement name="header-container" class="main-header-container" style="height: 25%;">
             <engine:Label text="Git Installer 2.0" class="main-header" />
@@ -13,102 +12,22 @@
             </engine:VisualElement>
         </engine:VisualElement>
         <engine:VisualElement style="flex-grow: 1; flex-shrink: 0; height: 80%;">
-            <engine:ScrollView name="scroll-container" style="flex-grow: 1; flex-shrink: 1;">
-                <engine:VisualElement name="git-amend" class="group-border" style="display: none;">
-                    <engine:VisualElement name="owner-container" style="flex-grow: 1;">
-                        <engine:Label text="Git Amend" name="package-owner" class="header" />
+            <engine:VisualElement template="owner-container" style="display: none;">
+                <Style src="project://database/Assets/TCS-PackageSystems/TCS-GitWizard/TCS%20GitWizard/Runtime/UIToolKit/USS/PackageWizardWindow.uss?fileID=7433441132597879392&amp;guid=6ae94729db7bab743afb159b0689faf2&amp;type=3#PackageWizardWindow" />
+                <engine:VisualElement name="owner-container" class="group-border">
+                    <engine:VisualElement name="title-container" style="flex-grow: 1;">
+                        <engine:Label text="Git Amend" name="owner-name" class="header" />
                     </engine:VisualElement>
                     <engine:VisualElement name="button-container" style="flex-grow: 1;">
-                        <engine:VisualElement name="element-container" class="element-container">
-                            <engine:Label text="Unity Improved Timers" name="install-label" class="install-label" />
-                            <engine:Button text="link" name="link-1" />
-                            <engine:Button text="Install" name="button-1" enabled="true" />
-                        </engine:VisualElement>
-                        <engine:VisualElement name="element-container" class="element-container">
-                            <engine:Label text="Unity Improved Timers" name="install-label" class="install-label" />
-                            <engine:Button text="link" name="link-2" />
-                            <engine:Button text="Install" name="button-2" enabled="true" />
+                        <engine:VisualElement name="element-container" class="element-container group-padding">
+                            <engine:Label text="Unity Utils Library" name="repo-name" class="install-label" />
+                            <engine:Button text="link" name="link" />
+                            <engine:Button text="Install" name="install" enabled="true" />
                         </engine:VisualElement>
                     </engine:VisualElement>
                 </engine:VisualElement>
-                <engine:VisualElement name="NET-for-Unity" class="group-border" style="flex-grow: 1; display: none;">
-                    <engine:VisualElement style="flex-grow: 1;">
-                        <engine:Label text=".NET For Unity" class="header" />
-                    </engine:VisualElement>
-                    <engine:VisualElement name="button-container" style="flex-grow: 1;">
-                        <engine:VisualElement name="element-container" class="element-container">
-                            <engine:Label text="Unity Utils Library" name="install-label" class="install-label" />
-                            <engine:Button text="link" name="link-3" />
-                            <engine:Button text="Install" name="button-3" enabled="true" />
-                        </engine:VisualElement>
-                        <engine:VisualElement name="element-container" class="element-container">
-                            <engine:Label text="Unity Utils Library" name="install-label" class="install-label" />
-                            <engine:Button text="link" name="link-4" />
-                            <engine:Button text="Install" name="button-4" />
-                        </engine:VisualElement>
-                    </engine:VisualElement>
-                </engine:VisualElement>
-                <engine:VisualElement name="others" class="group-border" style="flex-grow: 1; display: none;">
-                    <engine:VisualElement style="flex-grow: 1;">
-                        <engine:Label text="Others" class="header" />
-                    </engine:VisualElement>
-                    <engine:VisualElement name="button-container" style="flex-grow: 1;">
-                        <engine:VisualElement name="element-container" class="element-container">
-                            <engine:Label text="Unity Utils Library" name="install-label" class="install-label" />
-                            <engine:Button text="link" name="link-5" />
-                            <engine:Button text="Install" name="button-5" />
-                        </engine:VisualElement>
-                        <engine:VisualElement name="element-container" class="element-container">
-                            <engine:Label text="Unity Utils Library" name="install-label" class="install-label" />
-                            <engine:Button text="link" name="link-6" />
-                            <engine:Button text="Install" name="button-6" />
-                        </engine:VisualElement>
-                    </engine:VisualElement>
-                </engine:VisualElement>
-                <engine:VisualElement name="tent-city-studio" class="group-border" style="flex-grow: 1; display: none;">
-                    <engine:VisualElement style="flex-grow: 1;">
-                        <engine:Label text="Tent City Studios" class="header" />
-                    </engine:VisualElement>
-                    <engine:VisualElement name="button-container" style="flex-grow: 1;">
-                        <engine:VisualElement name="element-container" class="element-container">
-                            <engine:Label text="Unity Utils Library" name="install-label" class="install-label" />
-                            <engine:Button text="link" name="link-7" />
-                            <engine:Button text="Install" name="button-7" />
-                        </engine:VisualElement>
-                        <engine:VisualElement name="element-container" class="element-container">
-                            <engine:Label text="Unity Utils Library" name="install-label" class="install-label" />
-                            <engine:Button text="link" name="link-8" />
-                            <engine:Button text="Install" name="button-8" />
-                        </engine:VisualElement>
-                        <engine:VisualElement name="element-container" class="element-container">
-                            <engine:Label text="Unity Utils Library" name="install-label" class="install-label" />
-                            <engine:Button text="link" name="link-9" />
-                            <engine:Button text="Install" name="button-9" />
-                        </engine:VisualElement>
-                        <engine:VisualElement name="element-container" class="element-container">
-                            <engine:Label text="Unity Utils Library" name="install-label" class="install-label" />
-                            <engine:Button text="link" name="link-10" />
-                            <engine:Button text="Install" name="button-10" />
-                        </engine:VisualElement>
-                        <engine:VisualElement name="element-container" class="element-container">
-                            <engine:Label text="Unity Utils Library" name="install-label" class="install-label" />
-                            <engine:Button text="link" name="link-11" />
-                            <engine:Button text="Install" name="button-11" />
-                        </engine:VisualElement>
-                        <engine:VisualElement name="element-container" class="element-container">
-                            <engine:Label text="Unity Utils Library" name="install-label" class="install-label" />
-                            <engine:Button text="link" name="link-12" />
-                            <engine:Button text="Install" name="button-12" />
-                        </engine:VisualElement>
-                        <engine:VisualElement name="element-container" class="element-container">
-                            <engine:Label text="Unity Utils Library" name="install-label" class="install-label" />
-                            <engine:Button text="link" name="link-13" />
-                            <engine:Button text="Install" name="button-13" />
-                        </engine:VisualElement>
-                    </engine:VisualElement>
-                </engine:VisualElement>
-                <engine:Instance template="owner-container" name="owner-container" style="display: none;" />
-            </engine:ScrollView>
+            </engine:VisualElement>
+            <engine:ScrollView name="scroll-container" style="flex-grow: 1; flex-shrink: 1;" />
         </engine:VisualElement>
     </engine:VisualElement>
 </engine:UXML>

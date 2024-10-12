@@ -31,6 +31,8 @@ namespace TCS.GitWizard {
                 Debug.LogError("Container is null");
                 return;
             }
+            
+            container.AddToClassList("group-padding");
 
             m_repoLabel = m_container.Q<Label>(REPO_NAME);
             if (m_repoLabel == null) {
