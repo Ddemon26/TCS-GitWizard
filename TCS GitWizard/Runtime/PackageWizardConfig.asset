@@ -20,6 +20,8 @@ MonoBehaviour:
     m_url: https://github.com/rlabrecque/Steamworks.NET.git?path=/com.rlabrecque.steamworks.net
   - m_repoName: Zenject
     m_url: https://github.com/modesttree/Zenject
+  - m_repoName: KyleBanks scene-ref-attribute
+    m_url: https://github.com/KyleBanks/scene-ref-attribute.git
 --- !u!114 &-2692995617253340421
 MonoBehaviour:
   m_ObjectHideFlags: 0

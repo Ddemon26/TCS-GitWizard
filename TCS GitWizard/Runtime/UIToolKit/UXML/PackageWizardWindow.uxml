@@ -12,9 +12,9 @@
             </engine:VisualElement>
         </engine:VisualElement>
         <engine:VisualElement style="flex-grow: 1; flex-shrink: 0; height: 80%;">
-            <engine:VisualElement template="owner-container" style="display: none;">
+            <engine:VisualElement template="owner-container" style="display: flex;">
                 <Style src="project://database/Assets/TCS-PackageSystems/TCS-GitWizard/TCS%20GitWizard/Runtime/UIToolKit/USS/PackageWizardWindow.uss?fileID=7433441132597879392&amp;guid=6ae94729db7bab743afb159b0689faf2&amp;type=3#PackageWizardWindow" />
-                <engine:VisualElement name="owner-container" class="group-border">
+                <engine:VisualElement name="owner-container" class="group-border" style="display: none;">
                     <engine:VisualElement name="title-container" style="flex-grow: 1;">
                         <engine:Label text="Git Amend" name="owner-name" class="header" />
                     </engine:VisualElement>
