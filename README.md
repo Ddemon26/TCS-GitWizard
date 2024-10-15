@@ -1,6 +1,9 @@
 # TCS GitWizard
 
-![Status - Pre-Release](https://img.shields.io/badge/Status-Pre--Release-FFFF00) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/Ddemon26/TCS-GitWizard) ![GitHub](https://img.shields.io/github/license/Ddemon26/TCS-GitWizard) ![GitHub issues](https://img.shields.io/github/issues/Ddemon26/TCS-GitWizard) ![GitHub last commit](https://img.shields.io/github/last-commit/Ddemon26/TCS-GitWizard) [![Personal Discord](https://img.shields.io/discord/knwtcq3N2a?label=Personal%20Discord&logo=discord)](https://discord.gg/knwtcq3N2a) [![Game Dev Discord](https://img.shields.io/discord/3NMF6PwuT2?label=Game%20Dev%20Discord&logo=discord)](https://discord.gg/3NMF6PwuT2)
+![Status - Pre-Release](https://img.shields.io/badge/Status-Pre--Release-FFFF00) ![GitHub](https://img.shields.io/github/license/Ddemon26/TCS-GitWizard) ![GitHub issues](https://img.shields.io/github/issues/Ddemon26/TCS-GitWizard) ![GitHub last commit](https://img.shields.io/github/last-commit/Ddemon26/TCS-GitWizard) 
+
+[![Join our Discord](https://img.shields.io/badge/Discord-Join%20Us-7289DA?logo=discord&logoColor=white)](https://discord.gg/knwtcq3N2a)
+![Discord](https://img.shields.io/discord/1047781241010794506)
 
 ---
 
