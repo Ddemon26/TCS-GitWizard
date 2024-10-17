@@ -16,8 +16,6 @@ MonoBehaviour:
   m_packageInfos:
   - m_repoName: Eflatun SceneReference v4.1.1
     m_url: https://github.com/starikcetin/Eflatun.SceneReference.git#4.1.1
-  - m_repoName: Steamworks.NET
-    m_url: https://github.com/rlabrecque/Steamworks.NET.git?path=/com.rlabrecque.steamworks.net
   - m_repoName: Zenject
     m_url: https://github.com/modesttree/Zenject
   - m_repoName: KyleBanks scene-ref-attribute
@@ -40,6 +38,26 @@ MonoBehaviour:
     m_url: https://github.com/adammyhre/Unity-Utils.git
   - m_repoName: Unity-Improved-Timers
     m_url: https://github.com/adammyhre/Unity-Improved-Timers.git
+--- !u!114 &-1361343270824139073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7914a4a86a43ec9e156f3230709579, type: 3}
+  m_Name: gitInfo_5
+  m_EditorClassIdentifier: 
+  m_ownerName: Networking
+  m_packageInfos:
+  - m_repoName: Netick
+    m_url: https://github.com/NetickNetworking/NetickForUnity.git
+  - m_repoName: Facepunch Transport
+    m_url: https://github.com/Unity-Technologies/multiplayer-community-contributions.git?path=/Transports/com.community.netcode.transport.facepunch
+  - m_repoName: Steamworks.NET
+    m_url: https://github.com/rlabrecque/Steamworks.NET.git?path=/com.rlabrecque.steamworks.net
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54,6 +72,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_owners:
   - {fileID: -2692995617253340421}
+  - {fileID: -1361343270824139073}
   - {fileID: 6639761051506764844}
   - {fileID: -6755848809520808676}
   - {fileID: 2580860010598159388}
