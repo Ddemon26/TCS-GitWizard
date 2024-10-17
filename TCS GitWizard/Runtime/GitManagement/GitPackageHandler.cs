@@ -1,11 +1,15 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
+
+#if UNITY_EDITOR
 using UnityEditor.PackageManager;
 using UnityEditor.PackageManager.Requests;
 using UnityEngine;
+
 namespace TCS.GitWizard {
     internal static class GitPackageHandler {
         static AddRequest sRequest;
+
         static readonly Queue<string> PackagesToInstall = new();
 
         // Method to install a single package
@@ -62,7 +66,7 @@ namespace TCS.GitWizard {
             await Task.Delay(1000); // Optionally delay between installations
             StartNextPackageInstallation();
         }
-        
+
         // Method to open a URL link
         public static void OpenPackageUrl(string packageUrl) {
             if (string.IsNullOrEmpty(packageUrl)) {
@@ -73,10 +77,11 @@ namespace TCS.GitWizard {
             // Open the URL
             Application.OpenURL(packageUrl);
         }
-        
-        //method to uninstall a package
+
+        // Method to uninstall a package
         public static void UninstallPackage(string package) {
             Client.Remove(package);
         }
     }
 }
+#endif
