@@ -70,6 +70,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fa44b7a0aea4d729318cac9de228cfd, type: 3}
   m_Name: PackageWizardConfig
   m_EditorClassIdentifier: 
+  m_installerTitle: Package Wizard 1.0.2
   m_owners:
   - {fileID: -2692995617253340421}
   - {fileID: -1361343270824139073}

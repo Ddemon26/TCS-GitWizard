@@ -93,4 +93,4 @@ namespace TCS.GitWizard {
 
         public void Dispose() => Unsubscribe();
     }
-}
+}   
