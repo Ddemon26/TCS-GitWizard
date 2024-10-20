@@ -8,16 +8,28 @@ namespace TCS.GitWizard.Editor {
     public class WizardConfigEditor : UnityEditor.Editor {
         [SerializeField] VisualTreeAsset m_visualTreeAsset;
         PropertyField m_ownersField;
+        PropertyField m_installerTitleField;
 
         public override VisualElement CreateInspectorGUI() {
             var root = new VisualElement();
             VisualElement labelFromUxml = m_visualTreeAsset.Instantiate();
             root.Add(labelFromUxml);
 
+            // Create a PropertyField for the m_installerTitle field
+            m_installerTitleField = new PropertyField(serializedObject.FindProperty("m_installerTitle"));
+            m_installerTitleField.Bind(serializedObject);
+            root.Add(m_installerTitleField);
+
             // Create a PropertyField for the m_owners field
             m_ownersField = new PropertyField(serializedObject.FindProperty("m_owners"));
             m_ownersField.Bind(serializedObject);
             root.Add(m_ownersField);
+
+            // Add a Button to invoke the OnConfigChanged event
+            var invokeButton = new Button(() => ((GitWizardConfig)target).InvokeEvent()) {
+                text = "Refresh EditorWindow"
+            };
+            root.Add(invokeButton);
 
             // Add a button to create new GitPackageInfo
             var createButton = new Button(CreateNewGitPackageInfo) {

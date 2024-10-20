@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -74,9 +75,15 @@ namespace TCS.GitWizard {
                 return;
             }
 
+            // Check if the URL starts with "https://", if not, prepend it
+            if (!packageUrl.StartsWith("https://", StringComparison.OrdinalIgnoreCase)) {
+                packageUrl = "https://" + packageUrl;
+            }
+
             // Open the URL
             Application.OpenURL(packageUrl);
         }
+
 
         // Method to uninstall a package
         public static void UninstallPackage(string package) {

@@ -12,6 +12,8 @@ namespace TCS.GitWizard.Editor {
         List<PackageOwner> m_owners;
         VisualElement m_scrollView;
 
+        Label m_installerTitle;
+        const string INSTALLER_TITLE = "main-header__label";
         const string SCROLL_VIEW_NAME = "scroll-container";
         const string GROUP_BORDER = "group-border";
 
@@ -28,6 +30,8 @@ namespace TCS.GitWizard.Editor {
             foreach (var owner in m_gitConfig.m_owners) {
                 m_owners.Add(new PackageOwner(owner.m_ownerName, owner.m_packageInfos));
             }
+            
+            m_gitConfig.OnConfigChanged += Refresh;
         }
 
         public void CreateGUI() {
@@ -52,6 +56,12 @@ namespace TCS.GitWizard.Editor {
                 );
                 m_scrollView?.Add(ownerContainer);
             }
+            
+            //set the title Label, if the string is not null
+            m_installerTitle = root.Q<Label>(INSTALLER_TITLE);
+            if (m_installerTitle != null && !string.IsNullOrEmpty(m_gitConfig.m_installerTitle)) {
+                m_installerTitle.text = m_gitConfig.m_installerTitle;
+            }
         }
         VisualElement OwnerContainer() {
             VisualElement ownerContainer = m_ownerContainer.Instantiate();
@@ -74,11 +84,18 @@ namespace TCS.GitWizard.Editor {
             return elementContainers;
         }
 
+        void Refresh() {
+            rootVisualElement.Clear();
+            CreateGUI();
+        }
+
         void OnDisable() {
             foreach (var owner in m_owners) {
                 owner.Dispose();
             }
             m_owners.Clear();
+            
+            m_gitConfig.OnConfigChanged -= Refresh;
         }
     }
 }

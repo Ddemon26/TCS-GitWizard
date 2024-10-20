@@ -2,7 +2,7 @@
     <Style src="project://database/Assets/TCS-PackageSystems/TCS-GitWizard/TCS%20GitWizard/Runtime/UIToolKit/USS/PackageWizardWindow.uss?fileID=7433441132597879392&amp;guid=6ae94729db7bab743afb159b0689faf2&amp;type=3#PackageWizardWindow" />
     <engine:VisualElement name="root" style="flex-grow: 1;">
         <engine:VisualElement name="header-container" class="main-header-container" style="height: 25%;">
-            <engine:Label text="Git Installer 2.0" class="main-header" />
+            <engine:Label text="Git Installer 2.0" name="main-header__label" class="main-header" />
         </engine:VisualElement>
         <engine:VisualElement name="main-settings" class="group-border" style="display: none;">
             <engine:Label text="main Settings" class="header" />

@@ -3,17 +3,19 @@
     -unity-text-outline-color: rgb(0, 0, 0);
     letter-spacing: 2px;
     text-shadow: 1px 0.5px 0 rgb(0, 0, 0);
-    font-size: 16px;
+    font-size: 14px;
     color: rgb(255, 255, 255);
     -unity-font-style: bold;
+    text-overflow: ellipsis;
 }
 
 .main-header {
     -unity-font-definition: url("project://database/Assets/_Project/Settings/TextMesh%20Pro/Examples%20&%20Extras/Fonts/Unity.ttf?fileID=12800000&guid=f4eec857a4fdf2f43be0e9f3d1a984e7&type=3#Unity");
     -unity-text-align: middle-center;
-    white-space: pre-wrap;
+    white-space: nowrap;
     font-size: 30px;
     -unity-font-style: bold;
+    text-overflow: ellipsis;
 }
 
 .group-border {
@@ -51,8 +53,8 @@
 .header {
     -unity-text-align: middle-center;
     white-space: pre-wrap;
-    -unity-font-style: bold-and-italic;
-    font-size: 14px;
+    -unity-font-style: bold;
+    font-size: 18px;
     color: rgb(113, 155, 115);
 }
 
@@ -73,8 +75,8 @@
     flex-shrink: 1;
     flex-grow: 1;
     -unity-text-align: middle-left;
-    white-space: pre-wrap;
     -unity-font-style: bold;
+    white-space: pre-wrap;
 }
 
 .group-border {
@@ -124,6 +126,7 @@
     flex-grow: 0;
     flex-shrink: 1;
     justify-content: center;
+    overflow: hidden;
 }
 
 .unity-scroll-view {

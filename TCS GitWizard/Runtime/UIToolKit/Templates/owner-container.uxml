@@ -5,5 +5,8 @@
             <engine:Label text="Git Amend" name="owner-name" class="header" />
         </engine:VisualElement>
         <engine:VisualElement name="button-container" style="flex-grow: 1;" />
+        <engine:VisualElement name="install-all__container" style="flex-grow: 1; align-items: flex-end; padding-right: 3%; overflow: hidden; margin-top: 0; margin-bottom: 2%;">
+            <engine:Button text="Install all" name="install-all__button" style="width: 31%;" />
+        </engine:VisualElement>
     </engine:VisualElement>
 </engine:UXML>
