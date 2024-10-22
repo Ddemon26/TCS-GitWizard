@@ -91,6 +91,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ownerName: Tent City Studio
   m_packageInfos:
+  - m_repoName: Simple UI
+    m_url: https://github.com/Ddemon26/TCS-SimpleOptionsUI.git
   - m_repoName: String Library
     m_url: https://github.com/Ddemon26/TCS-String-Library.git
   - m_repoName: Scriptable Object Architecture
