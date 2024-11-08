@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 namespace TCS.GitWizard {
+    [HelpURL("https://github.com/Ddemon26/TCS-GitWizard/blob/main/README.md")]
     [Serializable]
     public class PackageSingle : IDisposable {
         VisualElement m_container;

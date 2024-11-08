@@ -45,13 +45,13 @@ The primary purpose is to centralize Git-based Unity packages, much like the Uni
 # Usage
 
 - **Opening GitWizard**: Navigate to `Tools > TCS GitWizard` within Unity.
+
+<img src="docs~/images/image2.png" alt="Add Package Interface" width="400" height="450" />
+
+
 - **Adding a Package**: Click "Add Package" to add a new Git-based package using the repository URL.
 
-  ![Add Package Interface](https://cdn.discordapp.com/attachments/1294049442248523877/1294541686323810367/image.png?ex=670b6365&is=670a11e5&hm=ac52f8267d3cc5fc1f475f4f0a3f5fabc7b05a65cba8ae868bca0b105e656c8e& "Add Package Interface")
-
-- **Updating Packages**: View and update packages to keep dependencies at their latest versions.
-
-  ![Update Package Interface](https://cdn.discordapp.com/attachments/1294216396770906154/1294555490113687615/image.png?ex=670b7040&is=670a1ec0&hm=c3108c065a4f0ba70d5c387378db6469d551340892aeec0bb78101a0d366068f& "Update Package Interface")
+<img src="docs~/images/image1.png" alt="PAdd Package Interface" width="400" />
 
 ---
 
@@ -59,7 +59,7 @@ The primary purpose is to centralize Git-based Unity packages, much like the Uni
 
 - **PackageWizardConfig.asset**: Stores settings like default branches, authentication methods, and package preferences.
 
-  ![Configuration Settings](path/to/configuration_settings.png)
+<img src="docs~/images/image3.png" alt="Update Package Interface" width="400" height="412" />
 
 ---
 

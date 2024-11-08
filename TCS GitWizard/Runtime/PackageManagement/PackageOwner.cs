@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 namespace TCS.GitWizard {
+    [HelpURL("https://github.com/Ddemon26/TCS-GitWizard/blob/main/README.md")]
     public class PackageOwner : IDisposable {
         VisualElement m_containerPrefab;
 
