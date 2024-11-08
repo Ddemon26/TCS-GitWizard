@@ -23,6 +23,9 @@ MonoBehaviour:
   - m_repoName: KyleBanks scene-ref-attribute
     m_url: https://github.com/KyleBanks/scene-ref-attribute.git
     m_description: 
+  - m_repoName: NavMesh 2D Pathfinding
+    m_url: https://github.com/h8man/NavMeshPlus
+    m_description: 
 --- !u!114 &-2692995617253340421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,6 +107,15 @@ MonoBehaviour:
     m_description: 
   - m_repoName: Physics Dropper
     m_url: https://github.com/Ddemon26/TCS-PhysicsDropper
+    m_description: 
+  - m_repoName: DependencyInjection-Lite
+    m_url: https://github.com/Ddemon26/TCS-DependencyInjection-Lite
+    m_description: 
+  - m_repoName: Service Locator
+    m_url: https://github.com/Ddemon26/TCS-ServiceLocator
+    m_description: 
+  - m_repoName: Debug Systems
+    m_url: https://github.com/Ddemon26/TCS-DebugSystems
     m_description: 
 --- !u!114 &6639761051506764844
 MonoBehaviour:
