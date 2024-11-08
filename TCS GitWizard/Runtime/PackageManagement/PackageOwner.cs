@@ -6,7 +6,7 @@ namespace TCS.GitWizard {
     public class PackageOwner : IDisposable {
         VisualElement m_containerPrefab;
 
-        string m_ownerName;
+        readonly string m_ownerName;
         Label m_ownerLabel;
         const string LABEL_NAME = "owner-name";
 
@@ -23,7 +23,7 @@ namespace TCS.GitWizard {
         readonly List<PackageInfo> m_packageInfoInfos;
         List<PackageSingle> m_packages;
 
-        public int PackageCount;
+        public readonly int PackageCount;
 
         public PackageOwner(string ownerName, List<PackageInfo> packageInfos) {
             m_ownerName = ownerName;
@@ -35,7 +35,7 @@ namespace TCS.GitWizard {
         void PopulatePackages() {
             m_packages = new List<PackageSingle>();
             foreach (var package in m_packageInfoInfos) {
-                m_packages.Add(new PackageSingle(package.m_repoName, package.m_url));
+                m_packages.Add(new PackageSingle(package.m_repoName, package.m_url, package.m_description));
             }
         }
 
@@ -47,7 +47,7 @@ namespace TCS.GitWizard {
             m_buttonContainer = m_containerPrefab.Q<VisualElement>(BUTTON_CONTAINER);
             m_ownerLabel = m_containerPrefab.Q<Label>(LABEL_NAME);
             m_ownerLabel.text = m_ownerName;
-            
+
             m_installAllContainer = m_containerPrefab.Q<VisualElement>(INSTALL_ALL_CONTAINER);
             m_installAllButton = m_containerPrefab.Q<Button>(INSTALL_ALL_BUTTON_TEXT);
             if (m_packages.Count > 1) {

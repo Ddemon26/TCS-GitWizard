@@ -31,7 +31,7 @@ namespace TCS.GitWizard.Editor {
                 m_owners.Add(new PackageOwner(owner.m_ownerName, owner.m_packageInfos));
             }
             
-            m_gitConfig.OnConfigChanged += Refresh;
+            m_gitConfig.ConfigChanged += Refresh;
         }
 
         public void CreateGUI() {
@@ -95,7 +95,7 @@ namespace TCS.GitWizard.Editor {
             }
             m_owners.Clear();
             
-            m_gitConfig.OnConfigChanged -= Refresh;
+            m_gitConfig.ConfigChanged -= Refresh;
         }
     }
 }

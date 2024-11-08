@@ -8,6 +8,7 @@ namespace TCS.GitWizard {
 
         public string m_repoName;
         public string m_url;
+        public string m_description;
 
         const string REPO_NAME = "repo-name";
         Label m_repoLabel;
@@ -15,16 +16,21 @@ namespace TCS.GitWizard {
         Button m_install;
         const string BUTTON_LINK = "link";
         Button m_link;
+        const string REPO_DESCRIPTION = "repo-description";
+        Label m_descriptionLabel;
 
         const string URL_PREFIX = "git+";
 
-        public PackageSingle(string repoLabel, string url) {
+        public PackageSingle(string repoLabel, string url, string description) {
             m_repoName = repoLabel;
             m_url = url;
             if (!IsUrlValid()) {
                 Debug.LogError("Invalid URL");
             }
+
+            m_description = description;
         }
+
         public void SetVisualElement(VisualElement container) {
             m_container = container;
             if (m_container == null) {
@@ -57,6 +63,20 @@ namespace TCS.GitWizard {
             }
 
             m_link.clicked += OpenUrl;
+
+            m_descriptionLabel = m_container.Q<Label>(REPO_DESCRIPTION);
+            if (m_descriptionLabel == null) {
+                Debug.LogError($"Label with name '{REPO_DESCRIPTION}' not found in container");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(m_description)) {
+                var foldout = m_container.Q<Foldout>();
+                foldout.style.display = DisplayStyle.None;
+            }
+            else {
+                m_descriptionLabel.text = m_description;
+            }
         }
         void SetButton() {
             m_install = m_container.Q<Button>(BUTTON_INSTALL);
@@ -93,4 +113,4 @@ namespace TCS.GitWizard {
 
         public void Dispose() => Unsubscribe();
     }
-}   
+}
