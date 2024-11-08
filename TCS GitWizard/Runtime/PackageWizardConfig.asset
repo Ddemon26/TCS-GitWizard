@@ -16,10 +16,13 @@ MonoBehaviour:
   m_packageInfos:
   - m_repoName: Eflatun SceneReference v4.1.1
     m_url: https://github.com/starikcetin/Eflatun.SceneReference.git#4.1.1
+    m_description: 
   - m_repoName: Zenject
     m_url: https://github.com/modesttree/Zenject
+    m_description: 
   - m_repoName: KyleBanks scene-ref-attribute
     m_url: https://github.com/KyleBanks/scene-ref-attribute.git
+    m_description: 
 --- !u!114 &-2692995617253340421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36,8 +39,10 @@ MonoBehaviour:
   m_packageInfos:
   - m_repoName: Unity-Utils
     m_url: https://github.com/adammyhre/Unity-Utils.git
+    m_description: 
   - m_repoName: Unity-Improved-Timers
     m_url: https://github.com/adammyhre/Unity-Improved-Timers.git
+    m_description: 
 --- !u!114 &-1361343270824139073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54,10 +59,13 @@ MonoBehaviour:
   m_packageInfos:
   - m_repoName: Netick
     m_url: https://github.com/NetickNetworking/NetickForUnity.git
+    m_description: 
   - m_repoName: Facepunch Transport
     m_url: https://github.com/Unity-Technologies/multiplayer-community-contributions.git?path=/Transports/com.community.netcode.transport.facepunch
+    m_description: 
   - m_repoName: Steamworks.NET
     m_url: https://github.com/rlabrecque/Steamworks.NET.git?path=/com.rlabrecque.steamworks.net
+    m_description: 
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,7 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fa44b7a0aea4d729318cac9de228cfd, type: 3}
   m_Name: PackageWizardConfig
   m_EditorClassIdentifier: 
-  m_installerTitle: Package Wizard 1.0.2
+  m_installerTitle: Git Wizard 1.0.2
   m_owners:
   - {fileID: -2692995617253340421}
   - {fileID: -1361343270824139073}
@@ -91,22 +99,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ownerName: Tent City Studio
   m_packageInfos:
-  - m_repoName: Simple UI
-    m_url: https://github.com/Ddemon26/TCS-SimpleOptionsUI.git
-  - m_repoName: String Library
-    m_url: https://github.com/Ddemon26/TCS-String-Library.git
-  - m_repoName: Scriptable Object Architecture
-    m_url: https://github.com/Ddemon26/TCS-ScriptableObjectArchitecture.git
-  - m_repoName: UIToolKit Utils
-    m_url: https://github.com/Ddemon26/TCS-UIToolKit-Utils.git
-  - m_repoName: Game Logger
-    m_url: https://github.com/Ddemon26/TCS-GameLogger.git
-  - m_repoName: Event Bus
-    m_url: https://github.com/Ddemon26/TCS-Event-Bus.git
   - m_repoName: Simple Scripts
     m_url: https://github.com/Ddemon26/TCS-Simple-Scripts.git
-  - m_repoName: Input Manager
-    m_url: https://github.com/Ddemon26/TCS-Input-Manager.git
+    m_description: 
+  - m_repoName: Physics Dropper
+    m_url: https://github.com/Ddemon26/TCS-PhysicsDropper
+    m_description: 
 --- !u!114 &6639761051506764844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,5 +121,7 @@ MonoBehaviour:
   m_packageInfos:
   - m_repoName: NuGetForUnity
     m_url: https://github.com/GlitchEnzo/NuGetForUnity.git?path=/src/NuGetForUnity
+    m_description: 
   - m_repoName: UniTask
     m_url: https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask
+    m_description: 
