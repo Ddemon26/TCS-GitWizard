@@ -14,7 +14,7 @@ namespace TCS.GitWizard {
                 LogType.Error => LOG_COLOR_ERROR,
                 LogType.Assert => LOG_COLOR_ASSERT,
                 LogType.Exception => LOG_COLOR_EXCEPTION,
-                _ => LOG_COLOR
+                _ => LOG_COLOR,
             };
             return $"<color={color}>[{newString}]</color>";
         }
