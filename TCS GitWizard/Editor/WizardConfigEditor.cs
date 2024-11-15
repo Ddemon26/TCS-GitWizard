@@ -27,19 +27,19 @@ namespace TCS.GitWizard.Editor {
 
             // Add a Button to invoke the OnConfigChanged event
             var invokeButton = new Button(() => ((GitWizardConfig)target).InvokeEvent()) {
-                text = "Refresh EditorWindow"
+                text = "Refresh EditorWindow",
             };
             root.Add(invokeButton);
 
             // Add a button to create new GitPackageInfo
             var createButton = new Button(CreateNewGitPackageInfo) {
-                text = "Create New GitPackageInfo"
+                text = "Create New GitPackageInfo",
             };
             root.Add(createButton);
 
             // Add a button to remove all GitPackageInfos
             var removeAllButton = new Button(RemoveMissingGitPackageInfos) {
-                text = "Remove Missing GitPackageInfos"
+                text = "Remove Missing GitPackageInfos",
             };
             root.Add(removeAllButton);
 
