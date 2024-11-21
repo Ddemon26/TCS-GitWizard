@@ -117,6 +117,9 @@ MonoBehaviour:
   - m_repoName: Debug Systems
     m_url: https://github.com/Ddemon26/TCS-DebugSystems
     m_description: 
+  - m_repoName: Toolkit String Generator
+    m_url: https://github.com/Ddemon26/TCS-ToolKitStringGenerator.git
+    m_description: 
 --- !u!114 &6639761051506764844
 MonoBehaviour:
   m_ObjectHideFlags: 0
