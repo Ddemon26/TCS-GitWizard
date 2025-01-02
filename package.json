@@ -1,14 +1,14 @@
 {
-  "name": "com.tcs.achievements",
-  "displayName": "TCS-Achievements",
+  "name": "com.tcs.gitwizard",
+  "displayName": "TCS-GitWizard",
   "description": "A simple achievement system for Unity",
   "version": "1.0.2",
-  "keywords": ["TCS", "Achievements", "Unity"],
+  "keywords": ["TCS", "Github", "Unity"],
   "category": "Tent City Studio",
   "dependencies": {},
   "author": {
     "name": "Damon Fedorick",
-    "url": "https://github.com/Ddemon26/TCS-Achievements"
+    "url": "https://github.com/Ddemon26/TCS-GitWizard"
   },
-  "documentationUrl": "https://github.com/Ddemon26/TCS-Achievements/blob/main/README.md"
+  "documentationUrl": "https://github.com/Ddemon26/TCS-GitWizard/blob/main/README.md"
 }
