@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace TCS.GitWizard {
     [HelpURL("https://github.com/Ddemon26/TCS-GitWizard/blob/main/README.md")]
-    [CreateAssetMenu(menuName = "TCS/GitWizard/Create GitWizardConfig", fileName = "GitWizardConfig", order = 1000)]
+    [CreateAssetMenu(menuName = "Tent City Studio/GitWizard/Create GitWizardConfig", fileName = "GitWizardConfig", order = 1000)]
     public class GitWizardConfig : ScriptableObject {
         [Header("Installer Title")]
         public string m_installerTitle;
