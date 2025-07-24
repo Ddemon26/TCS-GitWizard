@@ -90,5 +90,5 @@ namespace TCS.GitWizard {
             Client.Remove(package);
         }
     }
-}
 #endif
+}
